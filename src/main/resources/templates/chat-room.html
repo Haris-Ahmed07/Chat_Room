@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en" xmlns="http:www.thymeleaf.org">
+
+<head>
+	<meta charset="UTF-8" />
+	<title>Chat Room</title>
+
+	<link rel="stylesheet" href="/webjars/bootstrap/css/bootstrap.min.css" />
+	<link rel="stylesheet" href="" th:href="@{/css/style.css}" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+		integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script src="/webjars/sockjs-client/sockjs.min.js"></script>
+	<script src="/webjars/stomp-websocket/stomp.min.js"></script>
+	<script src="/script/script.js" type="text/javascript"></script>
+
+</head>
+
+<body>
+
+	<!--LOGIN PAGE CODE-->
+	<div class="bg-color d-flex align-items-center" id="name-form">
+		<div class="container-fluid">
+
+			<div class="login-header">
+				<h1 style="font-size: 500%;"><b>Welcome To Chat Room</b></h1>
+			</div>
+			<div class="row">
+				<div class="col-md-4 offset-md-4">
+					<div class="input-group">
+						<input type="text" placeholder="Enter your name" id="name-value" autofocus />
+						<div class="input-group-append">
+							<button class="btn btn-success" id="login-btn">Enter</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+	<!--CHAT ROOM CODE-->
+	<div id="chat-room" class="d-none bg-color ">
+		<div class="container-fluid size-adjust">
+			<div class="row " style="height: 100%;">
+				<div class="col-md-6 offset-md-3">
+					<div class="card-header text-white">
+						<h3 id="name-title"></i></h3>
+					</div>
+					<div class="card chat-background" id="message-body">
+						<div class="card-body  align-items-center chat-background" id="message-body-card">
+							<div class="table-responsive" style="height: 80vh;">
+								<table id="message-container-table">
+								</table>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="input-group" id="message-buttons">
+			<input type="text" placeholder="Enter your message" id="message-value" autofocus required />
+			<div class="input-group-append">
+				<button class="btn btn-dark" id="send-btn">Send</button>
+				<button class="btn btn-dark" id="logout-btn">Logout</button>
+			</div>
+		</div>
+	</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>

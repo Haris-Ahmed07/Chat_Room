@@ -1,0 +1,68 @@
+.bg-color{
+	background-image: url('/icons/background.jpg'); 
+	background-size: cover; 
+	background-repeat: no-repeat;
+}
+
+.chat-background{
+	background-color: lightgray;
+	border-radius: 10px;
+}
+
+
+#name-form{
+	height: 100vh;
+}
+
+.login-header{
+	color: white;
+	padding-bottom: 2%;	
+	text-align: center;
+}
+
+#name-value{
+	width: 80%;
+	border-radius: 10px;
+	border-color: aliceblue;
+	text-align: center;
+}
+
+#message-value{
+	width: 40%;
+	border-radius: 10px;
+	border-color: aliceblue;
+	text-align: center;
+	margin-right: 1%;
+}
+
+#message-buttons{
+	align-items: baseline;
+	padding-left: 31%;
+}
+
+#chat-room{
+	height: 100vh;
+}
+
+#message-body {
+	height: 100%;
+}
+
+.size-adjust{
+	height: 94vh;
+	width: 80%;
+}
+
+#login-btn{
+	margin-left: 6%;
+}
+
+
+tr {
+  border: 1px solid #ECE5DD;
+  border-radius: 15px; 
+}
+
+td {
+  padding: 10px;
+}
